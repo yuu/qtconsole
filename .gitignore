@@ -1,0 +1,6 @@
+.moc/*
+.obj/*
+!.gitkeep
+Makefile
+
+qtconsole
