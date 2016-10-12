@@ -9,5 +9,11 @@ int main(int argc, char **argv)
     qputenv(key, QByteArray("1"));
     qDebug() << "key:" << qgetenv(key);
 
+    bool ok = false;
+    if (0 == qEnvironmentVariableIntValue(key, &ok) && ok)
+        qDebug() << "引数1";
+    else
+        qDebug() << "引数0";
+
     return app.exec();
 }
