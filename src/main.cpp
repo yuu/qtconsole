@@ -5,11 +5,11 @@
 int main(int argc, char **argv)
 {
     QCoreApplication app(argc, argv);
-    QSettings s("~/.config/weston.ini", QSettings::IniFormat);
+    QSettings s("./weston.ini", QSettings::IniFormat);
     qDebug() << s.childGroups();
     s.beginGroup("ivi-launcher");
     qDebug() << s.childKeys();
     qDebug() << s.value("path");
 
-    return app.exec();
+    return 0;
 }
