@@ -17,4 +17,5 @@ INSTALLS += target documentation
 
 # Input
 SOURCES += \
-    src/main.cpp
+    src/main.cpp\
+    src/prettyprinter.cpp
